@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Row from './Row';
-import requests from './request'
-import Banner from './Banner'
-import Navbar from './Navbar';
+import Row from './components/Row/Row';
+import requests from './services/request'
+import Banner from './components/Banner/Banner';
+import Navbar from './components/Navbar/Navbar';
 
 
 
@@ -15,14 +15,14 @@ function App() {
 
       <Banner />
 
-      <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} />
-      <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
-      <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
-      <Row title="Action" fetchUrl={requests.fetchActionMovies} />
-      <Row title="Comedy" fetchUrl={requests.fetchComedyMovies} />
+      <Row title="Originais Netflix" fetchUrl={requests.fetchNetflixOriginals} />
+      <Row title="Mais Populares" fetchUrl={requests.fetchTrending} />
+      <Row title="Favoritos da Crítica" fetchUrl={requests.fetchTopRated} />
+      <Row title="Ação" fetchUrl={requests.fetchActionMovies} />
+      <Row title="Comédia" fetchUrl={requests.fetchComedyMovies} />
       <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} />
-      <Row title="Horror" fetchUrl={requests.fetchHorrorMovies} />
-      <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+      <Row title="Terror" fetchUrl={requests.fetchHorrorMovies} />
+      <Row title="Documentários" fetchUrl={requests.fetchDocumentaries} />
 
     </div>
   );

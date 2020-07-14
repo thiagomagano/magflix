@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import api from './axios';
-import requests from './request';
+import api from '../../services/axios';
+import requests from '../../services/request';
 import './Banner.css'
 
 const imgCover_baseUrl = "https://image.tmdb.org/t/p/original/"
