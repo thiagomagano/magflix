@@ -12,6 +12,9 @@ const requests = {
     fetchHorrorMovies: `/discover/movie?api_key=${API_KEY}&with_genres=27&language=pt-BR`,
     fetchRomanceMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10749&language=pt-BR`,
     fetchDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99&language=pt-BR`,
+    fetchTrailer: (type, id) => {
+        return `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${API_KEY}`
+    },
 };
 
 export default requests;
