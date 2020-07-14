@@ -29,6 +29,7 @@ function Row({ title, fetchUrl }) {
     async function handleClick(movie) {
         let response;
 
+        //verifica se é um filme ou uma série | identify if is movie or tv show
         if (movie?.name) {
             response = await api.get(requests.fetchTrailer('tv', movie?.id));
             console.table(response.data.results)
