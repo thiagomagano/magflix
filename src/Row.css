@@ -4,7 +4,11 @@
     overflow-x:scroll;
     padding:20px;
 }
+.row h1{
+text-align: left;
+color: #eee;
 
+}
 .row-posters::-webkit-scrollbar{
     display:none;
 }
@@ -18,4 +22,5 @@
 }
 .row-poster:hover{
     transform: scale(1.08);
+    cursor: pointer;
 }
